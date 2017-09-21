@@ -109,7 +109,7 @@
                 PersistedCommits.CreateIndex(
                     IndexKeys
                         .Ascending(MongoCommitFields.Dispatched)
-                        .Ascending(MongoCommitFields.CommitStamp),
+                        .Ascending(MongoCommitFields.Id),
                     IndexOptions.SetName(MongoCommitIndexes.Dispatched).SetUnique(false)
                 );
 
@@ -119,7 +119,6 @@
                             MongoCommitFields.StreamId,
                             MongoCommitFields.StreamRevisionFrom,
                             MongoCommitFields.StreamRevisionTo
-                    //,MongoCommitFields.FullqualifiedStreamRevision
                     ),
                     IndexOptions.SetName(MongoCommitIndexes.GetFrom).SetUnique(true)
                 );

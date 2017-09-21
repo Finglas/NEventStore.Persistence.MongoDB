@@ -37,6 +37,7 @@
         public const string StreamRevisionFrom = "StreamRevisionFrom";
         public const string StreamRevisionTo = "StreamRevisionTo";
 
+        public const string Id = "_id";
         public const string CommitId = "CommitId";
         public const string CommitStamp = "CommitStamp";
         public const string CommitSequence = "CommitSequence";
